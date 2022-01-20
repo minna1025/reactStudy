@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vanilla Js click Count</title>
+</head>
+<body>
+  <span>Total Clicks: 0</span>
+  <button id="btn">click-me</button>
+
+  <script>
+    let counter = 0;
+    const button = document.getElementById('btn');
+    const span = document.querySelector('span');
+    function handleClick() {
+      console.log('i have been clicked');
+      counter = counter + 1;
+      span.innerText = `Total Clicks: ${counter}`;
+    }
+    button.addEventListener("click", handleClick);
+  </script>
+</body>
+</html>
