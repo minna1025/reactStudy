@@ -1,6 +1,5 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
 
 function Detail() {
   const { id } = useParams();
